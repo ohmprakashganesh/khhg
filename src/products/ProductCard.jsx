@@ -42,7 +42,7 @@
           className="max-h-full max-w-full object-contain hover:scale-105 transition-transform duration-300" 
         />
       </div>
-    
+
       <div className="p-4 flex flex-col flex-grow">
         <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">
           {obj.category}

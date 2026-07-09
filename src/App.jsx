@@ -16,42 +16,23 @@ import Products from './products/Products';
 import Prods from './prod/Prods';
 import { CounterProvider } from './context/CounterContext';
 import Navbar from './navbar/Navbar';
+import TestCss from './counterApp/TestCss';
+import Tuesday from './tuesday/Tuesday';
+import Tuesday2 from './tuesday/Tuesday2';
+import Footer from './footer/Footer';
 // import ProductList from './products/Products'
 // import TodoApp from './todo/Todo'
 
 function App() {
   return (
     <>
-      {/* <Navbar1 /> */}
+ {/* <Navbar/> 
+ <Counter  /> 
 
-      <CounterProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Form />} />
+ <Form /> */}
+ <Products />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <Route path='/products' element={<Products />} />
-            <Route path='/calculator' element={<Calculator />} />
-            <Route path='/counter' element={<Counter />} />
-            <Route path='/' element={<Form />} />
-          </Routes>
-        </BrowserRouter>
-      </CounterProvider>
+ {/* <Footer />  */}
     </>
   )
 };

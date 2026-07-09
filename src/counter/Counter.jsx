@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useCounter } from "../context/CounterContext";
 
 const Counter = () => {
-    const {count, add, subtract} =  useCounter();
+  const[count,setCount] = useState(0);
     return (
         <div className=' w-screen h-screen text-3xl  bg-gray-500 '>
             <div className='w-[60%] h-[50%] mx-auto bg-gray-200'>
@@ -13,14 +13,13 @@ const Counter = () => {
                     <h1>{count} </h1>
                 </div>
                 <div className='w-full h-65 bg-amber-200 flex justify-center gap-x-10'>
-                    <button onClick={() => add()} className='h-16 px-2 w-50 bg-green-500'>increment</button>
-                    <button onClick={() => subtract()} className='h-16 px-2 w-50 bg-green-500'>dec</button>             </div>
+                    <button onClick={() => setCount(count + 1)} className='h-16 px-2 w-50 bg-green-500'>increment</button>
+                     <button onClick={() => setCount(0)} className='h-16 px-2 w-50 bg-red-500'>Reset</button>
+                    <button onClick={() => setCount(count - 1)} className='h-16 px-2 w-50 bg-green-500'>dec</button>             </div>
             </div>
-
         </div>
-
-
     )
 }
+
 
 export default Counter;
