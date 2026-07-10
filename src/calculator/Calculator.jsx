@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Calculator = () => {
+  const{name}=useParams();
+
 
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
@@ -8,7 +11,7 @@ const Calculator = () => {
   
   const handleClick = (value) => setInput((old) => old + value);
 
-   clearInput = () => {
+   const clearInput = () => {
     setInput("");
     setResult("");
   }

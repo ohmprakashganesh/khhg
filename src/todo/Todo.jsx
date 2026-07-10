@@ -2,24 +2,18 @@ import { useState } from 'react';
 
 
 
-
 const TodoApp = () => {
   const [todos, setTodos] = useState([]);
-
   const [inputValue, setInputValue] = useState('');
-
   const addTodo = (e) => {
     e.preventDefault();
-
     if (!inputValue.trim()) {
       return;
     }
-
-  const newrr={id: Date.now(), text: inputValue }
+  const newrr={id: new Date(), text: inputValue }
     setTodos([...todos,newrr]);
     setInputValue('');
   };
-
   const deleteTodo = (id) => {
     setTodos(todos.filter(ind => ind.id !== id));
     console.log(id)
@@ -76,7 +70,6 @@ const TodoApp = () => {
                 > delete
                 </button>
               </li>
-
             )
           )}
         </ul>

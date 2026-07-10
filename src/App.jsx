@@ -26,17 +26,42 @@ import Footer from './footer/Footer';
 function App() {
   return (
     <>
- {/* <Navbar/> 
- <Counter  /> 
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<TodoApp />}></Route>
+        <Route path='/cal' element={<Calculator />} />
+        <Route path='/cal/:name' element={<Calculator />} />
 
- <Form /> */}
- <Products />
 
- {/* <Footer />  */}
-    </>
-  )
+      </Routes>
+      </BrowserRouter>
+      </>
+ )
 };
 export default App;
+
+
+
+  
+ {/* <Navbar/> 
+ <Counter  /> 
+ 
+ <Form /> */}
+  {/* <CounterProvider> */}
+ 
+ {/* <TodoApp /> */}
+    
+    {/* <Products />
+    <Counter/> */}
+
+  {/* <Calculator /> */}
+
+  {/* </CounterProvider> */}
+ 
+
+ {/* <Footer />  */}
+   
+ 
 
 
 
