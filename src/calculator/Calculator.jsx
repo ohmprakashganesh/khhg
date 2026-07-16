@@ -2,24 +2,20 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Calculator = () => {
-  const{name}=useParams();
-
 
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
 
-  
   const handleClick = (value) => setInput((old) => old + value);
 
    const clearInput = () => {
     setInput("");
     setResult("");
   }
-  3
+  
   const calculateResult = () => {
       setResult(eval(input).toString());
   };
-  
   const deleteLast = () => setInput(input.slice(0, -1));
 
   // Utility for common button styles

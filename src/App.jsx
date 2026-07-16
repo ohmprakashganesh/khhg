@@ -28,7 +28,7 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<TodoApp />}></Route>
+        <Route path='/' element={<Products />}></Route>
         <Route path='/cal' element={<Calculator />} />
         <Route path='/cal/:name' element={<Calculator />} />
 

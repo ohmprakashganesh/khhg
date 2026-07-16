@@ -33,6 +33,7 @@
 
  export const ProductCard = ({obj}) => {
   console.log(obj);
+  console.log(obj);
   return (
     <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col">
 
@@ -51,7 +52,9 @@
       {obj.title}
         </h3>
         <div className="mt-auto">
-          <p className="text-lg font-bold text-gray-900 mb-3">5000</p>
+          <p className="text-lg font-bold text-gray-900 mb-3">{obj.price}</p>
+          <p className="text-lg font-bold text-gray-900  line-clamp-4 mb-3">{obj.description}</p>
+
           <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-sm font-semibold transition-colors duration-200">
             Add to Cart
           </button>
